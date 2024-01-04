@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap");
+
+* {
+	box-sizing: border-box;
+	font-family: "Montserrat";
+}
+
+.button {
+	padding: 0.5rem 1rem;
+	background-color: green;
+	border-radius: 10px;
+	width: fit-content;
+	background-color: #ff8400;
+	color: black;
+	cursor: pointer;
+}
+
+dialog {
+	border: none;
+	border-radius: 15px;
+	outline: none;
+	top: 50%;
+	left: 50%;
+	z-index: 1;
+}
+
+dialog::backdrop {
+	position: fixed;
+	background: #22222293;
+	z-index: 1;
+	width: 100vw;
+	height: 100vh;
+}
+
+/* animations */
+
+/* opening a dialog */
+dialog[open],
+#backdrop {
+	animation: fade-in 250ms forwards;
+}
+
+/* closing a dialog */
+dialog[open].close-animate,
+dialog[open].close-animate {
+	animation: fade-out 250ms forwards;
+}
+
+@keyframes fade-in {
+	0% {
+		transform: translate(-50%, -10%);
+		opacity: 0;
+	}
+	100% {
+		transform: translate(-50%, -50%);
+		opacity: 1;
+	}
+}
+
+@keyframes fade-out {
+	0% {
+		transform: translate(-50%, -50%);
+		opacity: 1;
+	}
+	100% {
+		transform: translate(-50%, -10%);
+		opacity: 0;
+		display: none;
+	}
+}
+
+/* The Modal (background) */
+.modal {
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+	background-color: #fefefe;
+	margin: 15% auto; /* 15% from the top and centered */
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+  }
