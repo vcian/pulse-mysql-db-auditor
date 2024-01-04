@@ -17,19 +17,19 @@
 <p style="font-family: 'CustomFont';"><b>Require the package with Composer:</b></p>
 
 ```shell
-    composer require vcian/pulse-mysql-db-auditor
+composer require vcian/pulse-mysql-db-auditor
 ```
     
 <p style="font-family: 'CustomFont';"><b>Next, you should publish the Pulse configuration and migration files using the vendor:publish Artisan command:</b></p>
 
 ```shell
-    php artisan vendor:publish --provider="Laravel\Pulse\PulseServiceProvider"
+php artisan vendor:publish --provider="Laravel\Pulse\PulseServiceProvider"
 ```
 
 <p style="font-family: 'CustomFont';"><b>Next, you should run the migration for required tables</b></p>
 
 ```shell
-    php artisan migrate
+php artisan migrate
 ```
 
 ## <p style="font-family: 'CustomFont';">Register the recorder</p>
@@ -82,5 +82,5 @@ return [
 <p style="font-family: 'CustomFont';">To make pulse recorders will automatically capture entries based on framework events dispatched by Laravel, You must run the below command.</p>
 
 ```shell
-    php artisan pulse:check
+php artisan pulse:check
 ```
