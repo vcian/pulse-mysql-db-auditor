@@ -57,8 +57,6 @@ return [
 
 ```diff
 <x-pulse>
-+     <livewire:pulse_db_auditor cols='7' />
-
     <livewire:pulse.servers cols="full" />
 
     <livewire:pulse.usage cols="4" rows="2" />
@@ -77,6 +75,7 @@ return [
 
     <livewire:pulse.slow-outgoing-requests cols="6" />
 
++     <livewire:pulse_db_auditor cols='full' />
 </x-pulse>
 ```
 
