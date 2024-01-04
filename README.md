@@ -17,7 +17,7 @@
 <p style="font-family: 'CustomFont';"><b>Require the package with Composer:</b></p>
 
 ```shell
-    composer require vcian/pulse-mysql-docker-monitor
+    composer require vcian/pulse-mysql-db-auditor
 ```
     
 <p style="font-family: 'CustomFont';"><b>Next, you should publish the Pulse configuration and migration files using the vendor:publish Artisan command:</b></p>
