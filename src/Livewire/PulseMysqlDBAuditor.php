@@ -8,12 +8,11 @@ use Livewire\Attributes\Lazy;
 use Vcian\LaravelDBAuditor\Constants\Constant;
 use Vcian\LaravelDBAuditor\Traits\Rules;
 use Vcian\LaravelDBAuditor\Traits\Audit;
-
+#[Lazy]
 class PulseMysqlDBAuditor extends Card
 {
     use Rules, Audit;
 
-    #[Lazy]
     public function render()
     {
         $constraintDetails = [];
@@ -24,16 +23,16 @@ class PulseMysqlDBAuditor extends Card
 
         $totalTables = count($this->getTableList());
         $successTables = $totalTables - count($standardCheck);
-        
+
         $summary = ['database_name' => $this->getDatabaseName(),
                     'size' => $this->getDatabaseSize(),
                     'table_count' => count($this->getTableList()),
                     'engin' => $this->getDatabaseEngin(),
                     'character_set' => $this->getCharacterSetName()];
-        
+
         $tableList = $this->getTableList();
         $collection = collect(array_values($standardCheck));
-        
+
         foreach($tableList as $table) {
             $primaryField = $this->getConstraintField($table, Constant::CONSTRAINT_PRIMARY_KEY);
             $uniqueField = $this->getConstraintField($table, Constant::CONSTRAINT_UNIQUE_KEY);
@@ -48,7 +47,7 @@ class PulseMysqlDBAuditor extends Card
                 "standardResult" => $collection
             ];
         }
-        
+
         return View::make('pulse_db_auditor::livewire.pulse_db_auditor', [
             'standardCheck' => $standardCheck,
             'summary' => $summary,
