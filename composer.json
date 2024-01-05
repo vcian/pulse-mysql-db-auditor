@@ -1,6 +1,6 @@
 {
     "name": "vcian/pulse-mysql-db-auditor",
-    "description": "A Laravel Pulse card to show user login dependencies",
+    "description": "A Laravel Pulse card show database auditing",
     "keywords": [
         "pulse",
         "laravel",
