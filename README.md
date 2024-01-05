@@ -78,9 +78,57 @@ return [
 +     <livewire:pulse_db_auditor cols='full' />
 </x-pulse>
 ```
+<img src="https://raw.githubusercontent.com/vcian/pulse-mysql-db-auditor/main/card-ss.png" width="100%" alt="Mysql DB Auditor Card">
 
 <p style="font-family: 'CustomFont';">To make pulse recorders will automatically capture entries based on framework events dispatched by Laravel, You must run the below command.</p>
 
 ```shell
-php artisan pulse:check
+    php artisan pulse:check
 ```
+## Changelog
+
+Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
+
+## Contributing
+
+Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
+
+       We believe in 
+            👇
+          ACT NOW
+      PERFECT IT LATER
+    CORRECT IT ON THE WAY.
+
+## Security
+
+If you discover any security-related issues, please email ruchit.patel@viitor.cloud instead of using the issue tracker.
+
+## Credits
+
+- [All Contributors](../../contributors)
+
+## Changelog
+
+Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
+
+## Contributing
+
+Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
+
+       We believe in 
+            👇
+          ACT NOW
+      PERFECT IT LATER
+    CORRECT IT ON THE WAY.
+
+## Security
+
+If you discover any security-related issues, please email ruchit.patel@viitor.cloud instead of using the issue tracker.
+
+## Credits
+
+- [All Contributors](../../contributors)
+
+## License
+
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
