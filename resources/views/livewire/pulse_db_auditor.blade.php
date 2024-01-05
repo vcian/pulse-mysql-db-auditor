@@ -1,5 +1,5 @@
 <x-pulse::card :cols="$cols" :rows="$rows" :class="$class">
-    <x-pulse::card-header name="Pulse DB Auditor">
+    <x-pulse::card-header name="Pulse MySql DB Auditor">
         <x-slot:icon>
             <x-pulse::icons.circle-stack />
         </x-slot:icon>
