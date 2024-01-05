@@ -79,7 +79,7 @@ return [
 
 </x-pulse>
 ```
-<img src="https://raw.githubusercontent.com/vcian/pulse-active-sessions/main/card-ss.png" width="100%" alt="Active Sessions Card">
+<img src="https://raw.githubusercontent.com/vcian/pulse-mysql-db-auditor/main/card-ss.png" width="100%" alt="Mysql DB Auditor Card">
 
 <p style="font-family: 'CustomFont';">To make pulse recorders will automatically capture entries based on framework events dispatched by Laravel, You must run the below command.</p>
 
