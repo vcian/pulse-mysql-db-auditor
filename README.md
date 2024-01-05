@@ -1,4 +1,3 @@
-![Packagist License](https://img.shields.io/packagist/l/vcian/pulse-mysql-db-auditor)
 ![Packagist Downloads](https://img.shields.io/packagist/dt/vcian/pulse-mysql-db-auditor)
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
