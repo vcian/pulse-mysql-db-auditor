@@ -85,5 +85,5 @@
         </x-pulse::table>
 
     </x-pulse::scroll>
-   
+
 </x-pulse::card>
